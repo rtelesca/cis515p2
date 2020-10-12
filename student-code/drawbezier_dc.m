@@ -17,9 +17,7 @@ function drawbezier_dc(B,nn,drawb)
  % Plot the curve segment as a random color
  if drawb == 1 
     plot(B(1,:), B(2,:), 'ro');
-    for i = 1:size(toPlot, 2)
-        plot(toPlot(1, i), toPlot(2, i), 'Color', [rand, rand, rand]);
-    end
+    plot(toPlot(1, :), toPlot(2, :), 'Color', [rand, rand, rand]);
  else
     %%% Plot the Bezier points as red + %%%
     plot(B(1,:), B(2,:), 'ro');
